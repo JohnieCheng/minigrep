@@ -1,6 +1,11 @@
+//! # IO
+//!
+//! A library for IO projects.
+
 use std::error::Error;
 use std::{env, fs};
 
+/// 配置对象
 pub struct Config {
     pub query: String,
     pub file_path: String,
@@ -8,6 +13,7 @@ pub struct Config {
 }
 
 impl Config {
+    /// 构造器
     pub fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
         args.next();
 
