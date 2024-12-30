@@ -1,6 +1,6 @@
 [package]
-name = "minigrep"
-version = "9.9.9"
+name = "minigrep_io_practice"
+version = "0.1.0"
 edition = "2021"
 
 [profile.dev]
